@@ -1,10 +1,2 @@
-# Python
-__pycache__/
-*.pyc
-
-# Sadie runtime data (generated at runtime — not source)
-memory/
-logs/
-skills/
-sadie_workspace/
-.sadie/
+# Python__pycache__/*.pyc# Sadie runtime data (generated at runtime — not source)memory/logs/skills/sadie_workspace/.sadie/
+# Trigger build
