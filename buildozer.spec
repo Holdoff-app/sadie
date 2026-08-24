@@ -11,7 +11,7 @@ source.exclude_patterns = tests/*,*.apk,*.zip,*.ipynb,*.md,*.jks,*.octet-stream.
 
 version = 1.0.0
 
-requirements = python3.11,hostpython3.11,kivy==2.3.0,pyjnius,pillow,plyer,requests,certifi,charset-normalizer,urllib3,idna
+requirements = python3.11,hostpython3.11,kivy==2.3.0,Cython==0.29.36,pyjnius,pillow,plyer,requests,certifi,charset-normalizer,urllib3,idna
 
 android.permissions = INTERNET,READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE,ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,READ_CONTACTS,WRITE_CONTACTS,READ_CALL_LOG,WRITE_CALL_LOG,CALL_PHONE,SEND_SMS,READ_SMS,RECEIVE_SMS,READ_PHONE_STATE,READ_CALENDAR,WRITE_CALENDAR,CAMERA,RECORD_AUDIO,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,VIBRATE,RECEIVE_BOOT_COMPLETED,FOREGROUND_SERVICE,WAKE_LOCK,POST_NOTIFICATIONS
 
