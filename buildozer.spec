@@ -23,7 +23,7 @@ android.allow_backup = True
 android.api = 33
 android.23c = 21
 android.enable_androidx = True
-android.ndk = 23c
+android.ndk = 25b
 android.accept_sdk_license = True
 
 [buildozer]
