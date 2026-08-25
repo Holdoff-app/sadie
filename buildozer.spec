@@ -11,7 +11,7 @@ source.exclude_patterns = tests/*,*.apk,*.zip,*.ipynb,*.md,*.jks,*.octet-stream.
 
 version = 1.0.0
 
-requirements = python3.11,hostpython3.11,kivy==2.3.0,Cython==3.0.10,pyjnius,pillow,plyer,requests,certifi,charset-normalizer,urllib3,idna
+requirements = python3,kivy==2.3.0,pyjnius,pillow,plyer,requests,certifi,charset-normalizer,urllib3,idna
 
 android.permissions = INTERNET,READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE,ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,READ_CONTACTS,WRITE_CONTACTS,READ_CALL_LOG,WRITE_CALL_LOG,CALL_PHONE,SEND_SMS,READ_SMS,RECEIVE_SMS,READ_PHONE_STATE,READ_CALENDAR,WRITE_CALENDAR,CAMERA,RECORD_AUDIO,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,VIBRATE,RECEIVE_BOOT_COMPLETED,FOREGROUND_SERVICE,WAKE_LOCK,POST_NOTIFICATIONS
 
@@ -24,6 +24,10 @@ android.api = 33
 android.23c = 21
 android.enable_androidx = True
 android.ndk = 25b
+
+# Pin python-for-android to a coherent release-era recipe set (Python 3.10/3.11 + Cython 0.29.x).
+# Build #7 log proved p4a ignores version pins in requirements and used Python 3.14.2 + Cython 0.29.36.
+p4a.branch = v2024.01.21
 android.accept_sdk_license = True
 
 [buildozer]
